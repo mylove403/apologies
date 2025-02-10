@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Stay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffefef;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #d6336c;
+        }
+        .gallery {
+            position: relative;
+            width: 300px;
+            height: 550px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery img {
+            position: absolute;
+            width: 300px;
+            height:500px;
+            border-radius: 10px;
+            opacity: 0;
+            animation: fadeinout 9s infinite;
+        }
+        .gallery img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .gallery img:nth-child(2) {
+            animation-delay: 3s;
+        }
+        .gallery img:nth-child(3) {
+            animation-delay: 6s;
+        }
+        @keyframes fadeinout {
+            0% { opacity: 0; }
+            33% { opacity: 1; }
+            66% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .message {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d6336c;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>You're More Than Everything to Me</h1>
+        <p class="message">Please think once more... I can't imagine my life without you.</p>
+        <div class="gallery">
+            <img src="cutie.jpg" alt="Our Memory">
+            <img src="beautiful.jpg" alt="Happy Times">
+            <img src="Amazing.jpg" alt="Love">
+        </div>
+      <div class="audio">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0gPgdRfB4jdGrlyXS0Vx78?utm_source=generator" width="40%" height="122" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+        <a href="https://api.whatsapp.com/send?phone=123456789&text=This%20is%20the%20last%20time%20I%20will%20give%20you%20the%20chance" class="btn">Let's Talk</a>
+    </div>
+</body>
+</html>
